@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Josefin Sans", sans-serif
+}
+
+body{
+    background: #f3f5f9;
+}
+.container {
+    display: flex;
+    position: relative;
+}
+
+.container .sidebar {
+    position: fixed;
+    width: 12rem;
+    height: 100%;
+    background: #4b4276
+}
+
+.container .sidebar h2 {
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+
+.container .sidebar ul li{
+    padding: 15px;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-bottom: 1px solid rgba(225,225,225,0.05);
+}
+.container .sidebar ul li a {
+    color: #bdb8d7
+}
+.container .sidebar ul li a .fas-icon {
+    width: 25px;
+}
+
+.container .sidebar ul li:hover {
+    background: #594f8d
+}
+.container .sidebar ul li:hover a {
+    color: #ffffff;
+}
+
+.container .sidebar  .socials {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+.container .sidebar  .socials a{
+   display: block;
+   width: 40px;
+   background: #594f8d;
+   height: 40px;
+   line-height: 40px;
+   text-align: center;
+   margin: 0 5px;
+   color: #bdb8d7;
+   border-top-right-radius: 5px;
+   border-top-left-radius: 5px;
+}
+
+.container  .main {
+    width: 100%;
+    margin-left: 200px;
+}
+
+.container  .main .header {
+    padding: 20px;
+    background: #fff;
+    color: #717171;
+    border-bottom: 1px solid #e0e4e8;
+}
+.container  .main .info {
+    margin: 20px;
+    color: #717171;
+    line-height: 25px;
+}
+.container  .main .info div{
+    margin-bottom: 20px;
+}

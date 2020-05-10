@@ -1,14 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { FaCaretDown } from "react-icons/fa"
+import { FaCaretDown, FaAlignRight } from "react-icons/fa"
 import "./SecondaryNav.css";
 const SecondaryNavbar = (props) => {
+  
+    const [isOpen, setIsOpen] = useState(false);
+    const handleToggle = ()  => setIsOpen(!isOpen);
     return (
         <div className="secondary-navbar">
-            <ul className="navbar-lists-1">
-                <li className="nav-items-left" style={{ flex: "1 1 47%", alignSelf: "center"}}><NavLink to="#">All Collections &nbsp;<FaCaretDown /> </NavLink><NavLink to="/about">About Us</NavLink><NavLink to="/news">News & Updates</NavLink ><NavLink to="/faq">FAQ</NavLink><NavLink to="/contact">Contact Us</NavLink></li>
+            <button type="button" id="nav-btn" onClick={handleToggle}><FaAlignRight /></button>
+            <ul className={!isOpen? "navbar-lists-1 show-nav":"navbar-lists-1"}>
+                <li><NavLink to="#">All Collections &nbsp;<FaCaretDown /> </NavLink></li>
+                <li><NavLink to="/about">About Us</NavLink></li>
+                <li><NavLink to="/news">News & Updates</NavLink ></li>
+                <li><NavLink to="/faq">FAQ</NavLink></li>
+                <li><NavLink to="/contact">Contact Us</NavLink></li>
 
-                <li className="nav-items-right" style={{flex: "1 1 50%", alignSelf: "center"}}><NavLink to="/genealogy">Genealogy</NavLink><NavLink to="/research">Academic Research</NavLink><NavLink to="/resources">Digital Resources</NavLink ><NavLink to="/education">Education</NavLink><NavLink to="/media">Media</NavLink><NavLink to="/donate">Donate/Community</NavLink></li>
+                <li><NavLink to="/genealogy">Genealogy</NavLink></li>
+                <li><NavLink to="/research">Academic Research</NavLink></li>
+                <li><NavLink to="/resources">Digital Resources</NavLink ></li>
+                <li><NavLink to="/education">Education</NavLink></li>
+                <li><NavLink to="/media">Media</NavLink></li>
+                <li><NavLink to="/donate">Donate/Community</NavLink></li>
             </ul>
         </div>
     )

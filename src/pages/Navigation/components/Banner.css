@@ -1,21 +1,21 @@
 /* Banner */
 .banner {
     display: flex;
-    background: rgba(0, 0, 0, 0.5);
+    background: linear-gradient(to right, rgba(7, 7, 7, 0.7), rgba(0, 0, 0, 0.8));
     color: var(--mainWhite);
-    padding: 2rem 1rem;
+    padding: 3rem 1rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-transform: capitalize;
     letter-spacing: var(--mainSpacing);
     width: 100%;
-    min-height: 30vh;
+    min-height: 70vh;
   
   }
   .banner h1 {
     font-size: 2.5rem;
-    margin-top: -10px;
+
   }
   @media screen and (min-width: 576px) {
     .banner {
@@ -45,7 +45,7 @@
     border-radius: 0.4rem;
     text-decoration: none;
     background: #f0ad4e;
-    margin-top: -50px;
+  
   }
   .btn-primary:hover {
     background: #c8811d;;

@@ -183,3 +183,14 @@ h4.date3 {
     align-self: center;
     justify-self: center;
 }
+
+@media screen and (max-width: 768px) {
+
+  .news {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    align-items: center;
+    justify-content: center;
+  }
+}
