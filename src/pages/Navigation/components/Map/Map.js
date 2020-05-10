@@ -12,7 +12,7 @@ export const Map = () => {
     return (
         <div className="map" style={{ marginTop:"-15rem"}}>
             <span style={{display:"flex", alignItems: "center", justifyContent:"center"}}><h2 style={{fontSize:"36px"}}>Find Us</h2> <span style={{fontSize:"24px", marginLeft:"5rem"}}>Nigeria Military Archives | Defence Intelligence Agency HeadQuater, Abuja</span></span>
-           <ReactMapGl {...viewport} mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN} onViewportChange={viewport => setViewport(viewport) } mapStyle="mapbox://styles/cypherz/ck9wz93ht0xgo1ippknsqny50">
+           <ReactMapGl {...viewport} mapboxApiAccessToken={"pk.eyJ1IjoiY3lwaGVyeiIsImEiOiJjazl3czFnMWUwM3lqM2VxZHEzN2hsbW9yIn0.8bYG15_syBavC8FfezEU6g"} onViewportChange={viewport => setViewport(viewport) } mapStyle="mapbox://styles/cypherz/ck9wz93ht0xgo1ippknsqny50">
                marker here
            </ReactMapGl> 
         </div>
