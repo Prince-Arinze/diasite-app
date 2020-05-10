@@ -1,0 +1,34 @@
+.navbar-lists-1 .nav-items-left{
+    list-style: none;
+}
+.navbar-lists-1 .nav-items-left a{
+    margin-left: 0.75rem;
+    text-decoration: none;
+}
+.navbar-lists-1 .nav-items-right{
+    list-style: none;
+}
+.navbar-lists-1 .nav-items-right a{
+    margin-left: 0.75rem;
+    text-decoration: none;
+}
+.secondary-navbar {
+    width: 100%;
+    height: auto;
+    background: #202626;
+    padding: 0.1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.secondary-navbar .navbar-lists-1 {
+    display: flex;
+    flex-direction: row;
+}
+.secondary-navbar .navbar-lists-1 a {
+    color: #ffffff;
+}
+.secondary-navbar .navbar-lists-1 a:hover {
+    color: rgb(158, 106, 9);
+}

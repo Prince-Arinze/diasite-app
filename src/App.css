@@ -1,0 +1,181 @@
+.notice {
+  margin: 5rem 2rem;
+}
+.services {
+ 
+  display: grid;
+  grid-gap: 20px;
+  width: 100%;
+   max-width: 100%;
+  margin: 0 auto;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "item1 item1 item2 item2"
+  "item3 item4 item5 item6";
+
+  color: #ffffff;
+  font-family: "sans-serif";
+}
+.form-control label, .form-control input {
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+}
+.form-control input {
+  padding-left: 0.2rem;
+}
+
+.item1 {
+  height: 250px;
+  grid-area: item1;
+  background-image:  linear-gradient(to right, rgba(105, 84, 33, 0.4), rgba(160, 91, 12, 0.4)), url("./images/machinegun.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.item2 {
+  height: 250px;
+  grid-area: item2;
+  background-image: linear-gradient(to right, rgba(231, 164, 7, 0.4), rgba(218, 124, 17, 0.4)), url("./images/machinegun.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.item3 {
+  height: 220px;
+  grid-area: item3;
+  background: #e5e0d3;
+}
+.item4 {
+  height: 220px;
+  grid-area: item4;
+  background: #ccc8be;
+}
+.item5 {
+  height: 220px;
+  grid-area: item5;
+  background: #b2afa6;
+}
+.item6 {
+  height: 220px;
+  grid-area: item6;
+  background: #99968f;
+}
+
+.item1 h2 a {
+  padding: 10px 15px 20px 25px;
+  font-size: 36px;
+  text-decoration: none;
+  color: #ffffff;
+}
+.item1 p {
+  font: 18px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /* margin: 10px 0; */
+  padding: 0px 15px 20px 25px;
+}
+
+.item2 h2 a {
+  padding: 10px 15px 20px 25px;
+  font-size: 36px;
+  text-decoration: none;
+  color: #ffffff;
+}
+.item2 p {
+  font: 18px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /* margin: 10px 0; */
+  padding: 0px 15px 20px 25px;
+}
+.item3 h2 a {
+  padding: 10px 15px 20px 25px;
+  font-size: 36px;
+  text-decoration: none;
+  color:  #3f3d3d;
+}
+.item3 a {
+  font: 18px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 10px 0;
+  padding: 0px 15px 20px 25px;
+  color: #3f3d3d;
+  text-decoration: none;
+}
+.item3 div {
+  margin-top: 20px;
+}
+.item4 h2 a{
+  padding: 10px 15px 20px 25px;
+  font-size: 36px;
+  text-decoration: none;
+  color: #3f3d3d;
+}
+.item4 a {
+  font: 18px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 10px 0;
+  padding: 0px 15px 20px 25px;
+  color: #3f3d3d;
+  text-decoration: none;
+}
+.item5 h2 a {
+  padding: 10px 15px 20px 25px;
+  font-size: 36px;
+  text-decoration: none;
+  color: #3f3d3d;
+}
+.item5 p {
+  font: 18px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 10px 0;
+  padding: 0px 15px 20px 25px;
+  color: #3f3d3d;
+  text-decoration: none;
+}
+.item6 h2 a {
+  padding: 10px 15px 20px 25px;
+  font-size: 36px;
+  text-decoration: none;
+  color: #3f3d3d;
+}
+.item6 p {
+  font: 18px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 10px 0;
+  padding: 0px 15px 20px 25px;
+  color: #3f3d3d;
+  text-decoration: none;
+}
+
+
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */

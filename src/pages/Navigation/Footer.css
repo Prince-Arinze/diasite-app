@@ -1,0 +1,44 @@
+.footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    background: #2A3333;
+}
+.footer-lists{
+    display: flex;
+    list-style: none;
+    width: 100%;
+}
+
+.footer-brand {
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+.footer-brand a {
+    color: rgb(158, 106, 9);
+}
+.footer-brand~a {
+    margin-left: 10px;
+}
+.footer-lists .navbar-brand > a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.nav-item1 {
+   font-family: "serif";
+   font-size: 2rem;
+}
+.footer-lists .nav-item1 > a {
+    text-decoration: none;
+    color: #ffffff;
+    justify-self: center;
+}
+
+.nav-item2 {
+    color: rgb(158, 106, 9);
+}
+.footer-lists .nav-item2 > a {
+    text-decoration: none;
+    color: rgb(158, 106, 9);
+    font-size: 1rem;
+}

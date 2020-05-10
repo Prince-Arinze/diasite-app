@@ -1,0 +1,77 @@
+.navigation {
+    background: #01474a;
+    height: 66px;
+}
+
+.brand1 {
+  background: #01474a;
+  
+}
+.brand1 span, .brand1 i {
+    color: #ffffff;
+}
+.dropdown-toggle::after {
+    color: #ffffff;
+}
+
+.navigation .dropdown-bg {
+    background: #023d3f;
+    border-top: 2px solid green;
+    border-radius: 0 !important;
+}
+
+.dropdown-divider.divide {
+    border-top: 1px solid green;
+}
+
+.dropdown-item.dropdowns:hover {
+    background: transparent;
+    color: grey !important;
+}
+
+.dropdown-item.dropdowns {
+    color: #ffffff !important;
+}
+.wrapper {
+    overflow-y: hidden !important;
+    height: 100%;
+}
+/* main page */
+.page-wrapper {
+    display: flex;
+    height: calc(100vh-66px) !important;
+   
+}
+.page-wrapper .left-sidebar {
+    flex: 2;
+    height: 100vh;
+    background: #234857;
+}
+
+.page-wrapper .left-sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: aliceblue !important;
+
+}
+
+.page-wrapper .left-sidebar ul li a {
+    padding: 18px;
+    display: block;
+    color: aliceblue !important;
+    border-bottom: 1px solid #004044;
+    text-decoration: none;
+}
+.page-wrapper .left-sidebar ul li a:hover {
+     border-left: 3px solid green;
+     background: #004044;
+}
+
+.page-wrapper .main-content {
+    flex: 8;
+    height: 100vh;
+    padding: 40px 100px 100px;
+    overflow-y: scroll;
+    background: aliceblue;
+}

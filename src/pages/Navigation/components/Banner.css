@@ -1,0 +1,53 @@
+/* Banner */
+.banner {
+    display: flex;
+    background: rgba(0, 0, 0, 0.5);
+    color: var(--mainWhite);
+    padding: 2rem 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    letter-spacing: var(--mainSpacing);
+    width: 100%;
+    min-height: 30vh;
+  
+  }
+  .banner h1 {
+    font-size: 2.5rem;
+    margin-top: -10px;
+  }
+  @media screen and (min-width: 576px) {
+    .banner {
+      padding: 2rem 3rem;
+    }
+    .banner h1 {
+      font-size: 3rem;
+    }
+   
+  }
+  @media screen and (min-width: 992px) {
+    .banner {
+      padding: 2rem 6rem;
+    }
+    .banner h1 {
+      font-size: 4rem;
+      color: #ffffff;
+    }
+  }
+
+  .btn-primary {
+    color: #000000;
+    display: flex;
+    align-items: center;
+    border: 1px solid #eea236;
+    padding: 0.5rem 0.5rem;
+    border-radius: 0.4rem;
+    text-decoration: none;
+    background: #f0ad4e;
+    margin-top: -50px;
+  }
+  .btn-primary:hover {
+    background: #c8811d;;
+  }
+  /* End of Banner */

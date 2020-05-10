@@ -1,0 +1,91 @@
+:root {
+    --primaryColor: #af9a7d;
+    --facebookBlue: #4568b2;
+    --dangerColor: #FF5A5F;
+    --mainWhite: #fff;
+    --offWhite: #f7f7f7;
+    --mainBlack: #222;
+    --mainGrey: #ececec;
+    --darkGrey: #cfcfcf;
+    --mainTransition: all 0.3s linear;
+    --mainSpacing: 3px;
+    --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+    --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+  }
+
+.modal {
+    width: 90%;
+    background: #ffffff;
+    box-sizing: 0 2px 8px rgba(0, 0, 0, 0.26);
+    position: fixed;
+    top: 20vh;
+    display: flex;
+    flex-direction: column;
+    z-index: 1100;
+}
+
+.modal_header{
+  background: #72532a;
+  color: #ffffff;
+  padding: 1rem;
+}
+.modal_header h1 {
+    margin: 0;
+    font-size: 1.05rem;
+    text-align: center;
+}
+.modal_content{
+    padding: 1rem;
+}
+.modal_content input {
+    width: 100%;
+    height: 2rem;
+    border: 1px solid #202626;
+}
+.modal_action {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+} 
+.modal_action .btn {
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+}
+.cancel {
+    background: var(--dangerColor);
+    border: 0;
+    color: white;
+    font-size: large;
+    padding: 0 0.5rem;
+    border-radius: 0.3rem;
+    text-transform: uppercase;
+    transition: var(--mainTransition);
+}
+.cancel:hover {
+    background: rgba(153, 26, 26, 0.5);
+}
+
+.book {
+    background: #202626;
+    border: 0;
+    color: white;
+    font-size: large;
+    border-radius: 0.3rem;
+    padding: 0 1rem;
+    text-transform: uppercase;
+    transition: var(--mainTransition);
+}
+.book:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+.modal_price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (min-width: 768px){
+    .modal{
+        width: 30rem;
+        left: calc((100% - 30rem) / 2);
+    }
+}

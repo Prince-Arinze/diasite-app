@@ -1,0 +1,17 @@
+/* Hero */
+.defaultHero,
+.roomsHero {
+  min-height: calc(40vh - 10px);
+  /* height: 70vh; */
+  background: url("./../../../images/military.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-attachment: fixed;
+  background-position: center;
+}
+/* .roomsHero {
+  background-image: url("./images/room-2.jpeg");
+  min-height: 60vh;
+} */
+/* End of Hero */

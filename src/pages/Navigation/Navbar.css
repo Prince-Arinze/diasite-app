@@ -1,0 +1,38 @@
+.navbar {
+    width: 100%;
+    height: auto;
+    display: flex;
+    background: #2A3333;
+}
+.navbar-lists{
+    display: flex;
+    list-style: none;
+    width: 100%;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.navbar-lists .navbar-brand > a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.nav-item1 {
+   font-family: "serif";
+   font-size: 2rem;
+}
+.navbar-lists .nav-item1 > a {
+    text-decoration: none;
+    color: #ffffff;
+    justify-self: center;
+}
+
+.nav-item2 {
+    color: rgb(158, 106, 9);
+}
+.navbar-lists .nav-item2 > a {
+    text-decoration: none;
+    color: rgb(158, 106, 9);
+    font-size: 1.25rem;
+}
