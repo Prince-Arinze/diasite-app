@@ -10,11 +10,11 @@ const Modal = props => {
           const password = passwordRef.current.value;
           console.log(username, password)
           if(username === "cypher" && password === "1234"){
-            window.location = "/dashboard";
-          }else if(username==="admin" && password === "1234"){
-            window.location = "/dashboard";
+            window.location = "/super-admin";
+          }else if(username==="admin1" && password === "1234"){
+            window.location = "/admin";
           }else {
-              alert("wrong information")
+              alert("Access denied!")
           }
     }
 

@@ -1,10 +1,8 @@
 import React, { Component } from "react";
-import { FaHome, FaUserAlt, FaTwitter,FaAddressCard,FaInstagram,  FaAddressBook, FaBlog, FaMapPin, FaFacebookF, FaArchive, FaFileArchive, FaStickyNote, FaBell } from "react-icons/fa";
-import { AiFillSetting } from "react-icons/ai";
-import "./Dashboard.css";
+import { FaHome, FaUserAlt, FaTwitter,FaAddressCard,FaInstagram, FaProjectDiagram, FaAddressBook, FaBlog, FaMapPin, FaFacebookF } from "react-icons/fa";
+import "./MainDashboard.css";
 
-class Dashboard extends Component{
-
+class MainDashboard extends Component{
   render() {
     return(
       
@@ -13,14 +11,12 @@ class Dashboard extends Component{
                   <h2>Dashboard</h2>
                   <ul>
                     <li><a href="/"><FaHome className="fas-icon"/>Home</a></li>
-                    <li><a href="/"><FaUserAlt className="fas-icon"/>Add Admins</a></li>
-                    <li><a href="/"><FaAddressCard className="fas-icon"/>View all activities</a></li>
-                    <li><a href="/"><FaFileArchive className="fas-icon"/>View Archives</a></li>
-                    <li><a href="/"><FaArchive className="fas-icon"/>Archives</a></li>
-                    <li><a href="/"><FaStickyNote className="fas-icon"/>Documents</a></li>
-                    <li><a href="/"><FaAddressBook className="fas-icon"/>Edit records</a></li>
-                    <li><a href="/"><FaBell className="fas-icon"/>Notifiactions</a></li>
-                    <li><a href="/"><AiFillSetting className="fas-icon"/>Settings</a></li>
+                    <li><a href="/"><FaUserAlt className="fas-icon"/>Profile</a></li>
+                    <li><a href="/"><FaAddressCard className="fas-icon"/>Archive a file</a></li>
+                    <li><a href="/"><FaProjectDiagram className="fas-icon"/>Portfolio</a></li>
+                    <li><a href="/"><FaBlog className="fas-icon"/>View your Archived</a></li>
+                    <li><a href="/"><FaAddressBook className="fas-icon"/>Contacts</a></li>
+                    <li><a href="/"><FaMapPin className="fas-icon"/>Map</a></li>
                   </ul>
                   <div className="socials">
                      <a href="/"><FaFacebookF /></a>
@@ -29,10 +25,10 @@ class Dashboard extends Component{
                   </div>
              </div>
              <div className="main">
-                <div className="header">Hi! You are welcome cypher </div>
+                <div className="header">H! Welcome admin1</div>
                 <div className="info">
-                
-                    <div className="w3-container">
+                     
+                <div className="w3-container">
                     <center><h2>View Activity Logs</h2></center>
                     <center><p>Recent activities</p></center>
 
@@ -48,17 +44,18 @@ class Dashboard extends Component{
                         <td>Approved</td>
                       </tr>
                       <tr>
-                        <td>admin2</td>
+                        <td>admin1</td>
                         <td>Requested for access to view a file</td>
                         <td>Pending</td>
                       </tr>
                       <tr style={{background: "greay"}}>
-                        <td>cypher</td>
-                        <td>Granted access to admin1</td>
+                        <td>admin1</td>
+                        <td>Uploaded a document</td>
                         <td>Confirmed</td>
                       </tr>
                     </table>
                   </div>
+
                 </div>
              </div>
          </div>
@@ -66,4 +63,4 @@ class Dashboard extends Component{
   }
 }
 
-export default Dashboard;
+export default MainDashboard;

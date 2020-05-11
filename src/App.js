@@ -4,6 +4,7 @@ import Home from "../src/pages/Home";
 import Dashboard from "../src/pages/Dashboard";
 import { BrowserRouter as Router, Switch, Route  } from "react-router-dom";
 import Modal from './pages/Navigation/components/Login';
+import MainDashboard from "../src/pages/MainDashboard";
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
          <Switch>
               <Route exact  path= "/" component={Home} />
               <Route exact path="/login" component={Modal} />
-              <Route path="/dashboard" component={Dashboard} exact/>
+              <Route path="/super-admin" component={Dashboard} exact/>
+              <Route path="/admin" component={MainDashboard} exact/>
           </Switch>
       </Router>
     </div>
