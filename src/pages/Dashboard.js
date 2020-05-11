@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { FaHome, FaUserAlt, FaTwitter,FaAddressCard,FaInstagram,  FaAddressBook, FaBlog, FaMapPin, FaFacebookF, FaArchive, FaFileArchive, FaStickyNote, FaBell } from "react-icons/fa";
 import { AiFillSetting } from "react-icons/ai";
+import diasite from "./../images/defence.jfif";
 import "./Dashboard.css";
 
 class Dashboard extends Component{
@@ -58,7 +59,9 @@ class Dashboard extends Component{
                         <td>Confirmed</td>
                       </tr>
                     </table>
-                  </div>
+                    
+                  </div><br/>
+                  <center><img src={diasite} alt="defence" /></center>
                 </div>
              </div>
          </div>
